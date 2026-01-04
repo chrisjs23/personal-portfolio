@@ -1,42 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chris Snelling – Portfolio</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        max-width: 640px;
-        margin: 0 auto;
-        padding: 2rem;
-      }
-      header,
-      footer {
-        text-align: center;
-      }
-      a {
-        color: #1e88e5;
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Chris Snelling</h1>
-      <p>A newbie developer with professional ambitions and great work ethic</p>
-    </header>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Website</title>
 
-    <main>
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:christopher.j.snelling@gmail.com">christopher.j.snelling@gmail.com</a> ·
-        <a href="https://github.com/chrisjs23">GitHub</a>
-      </p>
-    </main>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Chris Snelling - Professional Software Engineer</h1>
+        <img id="image" src="images/office concept.gif" class="responsive-image" alt="Animated sprite representing Chris Snelling in front of a computer workstation. The screen of the computer scrolls the message &quot;Hello World!&quot;">
 
-    <footer>
-      <small>© 2025 Chris Snelling</small>
-    </footer>
-  </body>
+        <!-- Tab links -->
+        <div class="container">
+            <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Bio')" id="defaultOpen">About Me</button>
+            <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+            <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+            </div>
+        </div>
+
+        <!-- Tab content -->
+
+        <!--BIO SECTION-->
+        <div class="container">
+            <div id="Bio" class="tabcontent">
+            <h3>Bio</h3>
+            <p>
+            I build software systems with an emphasis on structure, clarity, and practical usability. 
+            My work spans general software engineering, machine learning projects, and game development, with 
+            experience across modern languages, libraries, and development environments.
+            </p>
+            <hr>
+            <!--SKILLS SECTION-->
+            <h3>Key Skills</h3>
+            <ul>
+                <li>Languages: Java, Python, C/C++/C#, SQL, Bash, GDScript, Lua</li>
+                <li>Libraries & Frameworks: NumPy, pandas, matplotlib, scikit-learn</li>
+                <li>Game & Creative Tools: Godot, Unity, Pico-8, Aseprite</li>
+                <li>Systems & Tools: Git/GitHub, Linux, CLI tooling, MongoDB</li>
+                <li>Software Engineering Object-oriented programming, Algorithm design & analysis, Debugging & unit testing, 
+                    Agile/Scrum collaboration</li>
+                <li>Applied Domains: Machine learning, Natural language processing, data preprocessing and evaluation pipelines</li>
+                <li>Communication: Technical writing and documentation, Peer code review, Cross-functional collaboration</li>
+            </ul>
+            <hr>
+            <!--EDUCATION & EXPERIENCE SECTION-->
+            <h3>Education</h3>
+            <p>M.S. Computer Science (AI Focus), Johns Hopkins University - expected graduation 2026</p>
+            <p>B.S. Computer Science, University of Maryland Global Campus - 2023, GPA 3.7</p>
+            <p>B.S. Psychology, Virginia Tech - 2013</p>
+            <hr>
+            <h3>Professional Experience</h3>
+            <p>
+                Course Support Assistant (2025-Present)<br>
+                <ul>
+                    <li>Supported faculty, instructional designers, and course support specialists in the creation 
+                    of WCAG-compliant learning materials for online courses in numerous disciplines</li>
+                    <li>Converted outdated course materials to modern accessible formats</li>
+                </ul>
+            </p>
+            <p>
+                DoorDash Delivery Driver (2025)<br>
+                <ul>
+                    <li>Independently managed real-time logistics to deliver orders quickly and accurately, 
+                    maintained excellent customer ratings, and adapted routes on the fly to maximize 
+                    efficiency and on-time performance</li>
+                </ul>
+            </p>
+            <p>
+                Full-Time Family Caregiver (2013-2023)<br>
+                <ul>
+                    <li>Provided round-the-clock caregiving for an ill family member, demonstrating 
+                    resilience, self-direction, and disciplined time management.</li>
+                </ul>
+            </p>
+            <p>
+                Research Assistant, Department of Computer Science, Virginia Tech (2012)<br>
+                <ul>
+                    <li>Coordinated multi-session user-experience studies; prepared hardware/software 
+                    labs and processed datasets for statistical analysis.</li>
+                </ul>
+            </p>
+            <hr>
+            <h3>Leadership & Service</h3>
+            <ul>
+                <li>Kappa Kappa Psi, Eta Beta Chapter - Managed event logisitcs and community outreach for campus bands</li>
+                <li>Trumpeter, Marching Virginians - Peformed in 15+ NCAA football halftime shows before 60k-seat crowds</li>
+            </ul>
+            </div>
+
+            <!--PROJECTS SECTION-->
+            <div id="Projects" class="tabcontent">
+            <h3>Projects</h3>
+            <p>
+                (Machine Learning Projects go here)
+            </p>
+            <hr>
+            <p>
+                Clue-Less — Godot 4 / C# | Team of 5 | January - March 2025
+                <ul>
+                    <li>Designed a simplified version of the classic board game CLUE</li>
+                    <li>Developed intuitive gameplay systems and custom assets with fresh but familiar themes</li>
+                    <li>Utilized networking libraries to create an engaging multiplayer experience</li>
+                </ul>
+                <img src="images/Clueless 2.png" alt="Screenshot of Godot project for Clue-Less" class="responsive-image">
+                <br>
+                <img src="images/Clueless.png" alt="Subsystem architecture diagram for Clue-Less game" class="responsive-image">
+                <br>
+                <img src="images/all character cards.png" alt="Character cards for the game" class="responsive-image">
+            </p>
+            <hr>
+            <p>
+                TRIVIAGPT — Java / libGDX / OpenAI API / MongoDB | Team of 6 | June - August 2023
+                <ul>
+                    <li>Architected a full-stack trivia game that generates dynamic questions via OpenAI API, increasing replayability 5x </li>
+                    <li>Built RESTful micro-service with MongoDB backend for game-state and player data</li>
+                    <li>Managed GitHub feature-branch workflow and code reviews to uphold project quality and reduce defects</li>
+                </ul>
+                <img src="images/triviagpt1.png" alt="Screenshot of the main menu for TRIVIAGPT" class="responsive-image">
+                <br>
+                <img src="images/triviagpt2.png" alt="Screenshot of the main gameplay screen of TRIVIAGPT" class="responsive-image">
+            </p>
+            <hr>
+            <p>
+                Personal Media Server — Jellyfin / MakeMKV / Linux (Raspberry Pi) / Bash | August 2025 
+                <ul>
+                    <li>Built a self-hosted streaming stack with Jellyfin on a Raspberry Pi to consolidate outdated media</li>
+                    <li>Crafted Bash pipeline to automate disc handling: ripping with MakeMKV, converting to H.264, and moving/organizing outputs into Jellyfin-friendly library structure</li>
+                    <li>Leveraged Linux CLI tools to implement logging, manage storage mounts/permissions, and automatic cleanup of empty work directories </li>
+                </ul>
+            </p>
+            <hr>
+            <p>
+                2-D Platformer Prototype — Godot 4 / GDScript | November - December 2024
+                <ul>
+                    <li>Developed custom physics, collision detection, and state-machine-driven gameplay loop in Godot 4</li>
+                </ul>
+                <img src="images/platformer.png" alt="Screenshot of Godot workspace for 2D platformer project" class="responsive-image">
+            </p>
+            <hr>
+            <p>
+                Custom Compiler — C / Flex / Bison | March - May 2023
+                <ul>
+                    <li>Designed lexical analyzer and LL parser for a bespoke language; emitted LLVM-compatible byte-code and achieved >95% automated test-suite pass rate</li>
+                    <li>Implemented symbol, literal, and error tables to support semantic analysis and detailed compiler diagnostics</li>
+                </ul>
+            </p>
+            </div>
+
+            <!--CONTACT SECTION-->
+            <div id="Contact" class="tabcontent">
+            <h3>Contact Information</h3>
+            <p>
+                Email: <a href="mailto:christopher.j.snelling@gmail.com">christopher.j.snelling@gmail.com</a><br>
+                LinkedIn: <a href="https://www.linkedin.com/in/christopher-snelling/">https://www.linkedin.com/in/christopher-snelling</a>
+            </p>
+            </div>
+
+            <script src="script.js" defer></script>
+
+            <p class="copyright">© 2026 Christopher Snelling. All rights reserved.</p>
+
+        </div>
+
+    </body>
 </html>
+>>>>>>> c0ae9f2 (Initial commit)
