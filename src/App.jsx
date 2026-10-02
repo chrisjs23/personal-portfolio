@@ -1,29 +1,20 @@
-import { useState } from 'react'
-import Header from './components/Header'
-import NavTabs from './components/NavTabs'
-import MainSection from './components/MainSection'
-import ProjectsSection from './components/ProjectsSection'
-import ContactSection from './components/ContactSection'
-import Footer from './components/Footer'
+import {Routes, Route} from "react-router-dom"
+
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
+import About from "./pages/About"
+import Layout from "./components/Layout"
 
 function App() {
-  const [activeTab, setActiveTab] = useState('main')
 
   return (
-    <>
-      <Header />
-
-      <NavTabs
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-      />
-
-      {activeTab === 'main' && <MainSection />}
-      {activeTab === 'projects' && <ProjectsSection />}
-      {activeTab === 'contact' && <ContactSection />}
-
-      <Footer />
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+      </Route>
+    </Routes>
   )
 }
 
