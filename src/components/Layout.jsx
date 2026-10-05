@@ -1,24 +1,28 @@
 
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
+import "./Layout.css"
+import Menu from "./Menu"
 
 export default function Layout() {
     return (
-        <>
-            <header>
-                <nav>
-                    <Link to="/">Home</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/about">About</Link>
-                </nav>
+        <div className="app-shell">
+            <header className="header">
+                Header
             </header>
 
-            <main>
-                <Outlet />
-            </main>
+            <div className="main-layout">
+                <nav className="sidebar">
+                    <Menu />
+                </nav>
 
-            <footer>
+                <main className="content">
+                    <Outlet />
+                </main>
+            </div>
+
+            <footer className="footer">
                 <p>Footer</p>
             </footer>
-        </>
+        </div>
     )
 }
