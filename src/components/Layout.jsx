@@ -7,7 +7,8 @@ export default function Layout() {
     return (
         <div className="app-shell">
             <header className="header">
-                Header
+                <h1 className="header-indentiy">Christopher J. Snelling</h1>
+                <p>Software Developer</p>
             </header>
 
             <div className="main-layout">
@@ -21,7 +22,12 @@ export default function Layout() {
             </div>
 
             <footer className="footer">
-                <p>Footer</p>
+                <div className="footer-links">
+                    <a href="https://github.com/chrisjs23">GitHub</a>
+                    <a>Resume</a>
+                    <a href="mailto:christopher.j.snelling@gmail.com">Email</a>
+                </div>
+                <p>© 2026 Christopher J. Snelling</p>
             </footer>
         </div>
     )

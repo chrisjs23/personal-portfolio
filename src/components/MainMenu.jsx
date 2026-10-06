@@ -3,9 +3,15 @@ import { NavLink } from "react-router-dom";
 export default function MainMenu() {
     return (
         <>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/projects">Projects</NavLink>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/" end className="menu-link">
+                Home
+            </NavLink>
+            <NavLink to="/projects" end className="menu-link">
+                Projects
+            </NavLink>
+            <NavLink to="/about" className="menu-link">
+                About
+            </NavLink>
         </>
     )
 }
