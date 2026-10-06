@@ -25,8 +25,21 @@ export default function Layout() {
 
             <footer className="footer">
                 <div className="footer-links">
-                    <a href="https://github.com/chrisjs23">GitHub</a>
-                    <a>Resume</a>
+                    <a 
+                        href="https://github.com/chrisjs23"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                    <a
+                        href="/documents/Christopher_Snelling_Resume.pdf"
+                        download="Christopher_Snelling_Resume.pdf"
+                    >
+                        Resume
+                    </a>
+
                     <a href="mailto:christopher.j.snelling@gmail.com">Email</a>
                 </div>
                 <p>© 2026 Christopher J. Snelling</p>
