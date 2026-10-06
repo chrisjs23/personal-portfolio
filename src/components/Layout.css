@@ -46,6 +46,19 @@ body {
   margin: 1.5rem 2rem 1rem;
 }
 
+.header-art {
+    height: calc(15vh - 6px);
+    width: auto;
+
+    margin-left: auto;
+    margin-bottom: -1rem;
+
+    align-self: flex-end;
+
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
 .footer {
   display: flex;
   align-items: center;

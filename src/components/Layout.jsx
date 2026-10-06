@@ -2,6 +2,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./Layout.css"
 import Menu from "./Menu"
+import headerAccent from "../assets/images/office-concept.gif"
 
 export default function Layout() {
     return (
@@ -9,6 +10,7 @@ export default function Layout() {
             <header className="header">
                 <h1 className="header-indentiy">Christopher J. Snelling</h1>
                 <p>Software Developer</p>
+                <img className="header-art" src={headerAccent}/>
             </header>
 
             <div className="main-layout">
