@@ -1,0 +1,242 @@
+.home-page {
+    height: 100%;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    color: white;
+}
+
+
+/* ------------------------------
+   Shared sections
+   ------------------------------ */
+
+.home-panel {
+    border: 3px solid #ddd;
+    background: #222;
+    padding: 1.5rem;
+}
+
+.panel-heading {
+    margin-bottom: 1.5rem;
+}
+
+.panel-heading span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   Profile
+   ------------------------------ */
+
+.home-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+}
+
+
+/* Portrait */
+
+.portrait-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.portrait-image {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+.portrait-placeholder {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Profile information */
+
+.profile-info-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-summary {
+    margin-bottom: 1.5rem;
+}
+
+.profile-summary h2 {
+    margin: 0;
+
+    font-size: 2rem;
+}
+
+.profile-details {
+    display: grid;
+    gap: 1rem;
+}
+
+.profile-detail {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 1rem;
+}
+
+.detail-label {
+    font-weight: bold;
+}
+
+.detail-value {
+    line-height: 1.4;
+}
+
+
+/* ------------------------------
+   Skills / concepts
+   ------------------------------ */
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 3rem;
+}
+
+.concept-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+
+    line-height: 1.4;
+}
+
+.concept-marker {
+    font-size: 0.7rem;
+}
+
+
+/* ------------------------------
+   Technologies
+   ------------------------------ */
+
+.technology-groups {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.technology-group {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.5rem;
+}
+
+.technology-group h3 {
+    margin: 0.4rem 0 0;
+
+    font-size: 1rem;
+}
+
+.technology-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.technology-badge {
+    border: 2px solid #ddd;
+    background: #111;
+    color: white;
+
+    padding: 0.4rem 0.75rem;
+}
+
+
+/* ------------------------------
+   Current quest
+   ------------------------------ */
+
+.current-quest {
+    border: 3px solid #ddd;
+    background: #222;
+
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 9rem 1fr auto;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.quest-title {
+    font-weight: bold;
+}
+
+.quest-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.quest-content span {
+    line-height: 1.4;
+}
+
+.quest-status {
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+
+/* ------------------------------
+   Responsive layout
+   ------------------------------ */
+
+@media (max-width: 850px) {
+
+    .home-profile {
+        grid-template-columns: 1fr;
+    }
+
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .technology-group {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .current-quest {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .home-page {
+        padding: 1rem;
+    }
+
+    .home-panel,
+    .current-quest {
+        padding: 1rem;
+    }
+
+    .profile-detail {
+        grid-template-columns: 1fr;
+        gap: 0.25rem;
+    }
+}
