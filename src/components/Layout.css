@@ -75,6 +75,15 @@
   gap: 1.5rem;
 }
 
+.footer a {
+  color: white;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #66e0ff;
+}
+
 .footer p {
   margin: 0;
   padding: 1rem;

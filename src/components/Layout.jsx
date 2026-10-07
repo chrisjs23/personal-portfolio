@@ -3,6 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import "./Layout.css"
 import Menu from "./Menu"
 import headerAccent from "../assets/images/office-concept.gif"
+import resumePdf from "../assets/Christopher_Snelling_Resume.pdf";
 
 export default function Layout() {
     return (
@@ -33,10 +34,7 @@ export default function Layout() {
                         GitHub
                     </a>
 
-                    <a
-                        href="/documents/Christopher_Snelling_Resume.pdf"
-                        download="Christopher_Snelling_Resume.pdf"
-                    >
+                    <a href={resumePdf} download="Christopher_Snelling_Resume.pdf">
                         Resume
                     </a>
 
