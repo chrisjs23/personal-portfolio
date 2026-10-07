@@ -32,8 +32,8 @@ export default function ProjectsHome() {
       <div className="projects-hero">
         <img
           className="projects-hero-image"
-          src=""
-          alt=""
+          // src=""
+          // alt=""
         />
       </div>
 

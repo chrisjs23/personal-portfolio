@@ -1,16 +1,8 @@
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  background: #111;
-}
-
 .app-shell {
   min-height: 100vh;
-  max-width: 1200px;
+  max-width: 1500px;
+  margin: 0 auto;
   display: grid;
   grid-template-rows:15vh 1fr 10vh;
   padding: 1rem;
@@ -19,8 +11,19 @@ body {
 
 .main-layout {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
   gap: 0.75rem;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-body {
+    grid-template-columns: 1fr;
+  }
 }
 
 .header,
@@ -30,6 +33,7 @@ body {
   border: 3px solid #ddd;
   background: #222;
   color: white;
+  min-width: 0;
 }
 
 .header {
@@ -73,10 +77,15 @@ body {
 
 .footer p {
   margin: 0;
+  padding: 1rem;
 }
 
 .sidebar {
   padding: 1rem;
+}
+
+.content {
+  min-width: 0;
 }
 
 .menu-link {
@@ -132,6 +141,11 @@ body {
   grid-template-columns: 1fr;
 }
 
+.project-details,
+.project-gallery {
+  min-width: 0;
+}
+
 .project-details {
   padding: 1.5rem;
 }
@@ -161,4 +175,67 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    grid-template-rows: auto 1fr auto;
+    padding: 0.5rem;
+  }
+
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .project-body {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "name art"
+      "role art";
+    gap: 0.25rem 0.75rem;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .header h1 {
+    grid-area: name;
+    min-width: 0;
+  }
+
+  .header p {
+    grid-area: role;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .header-art {
+    grid-area: art;
+
+    width: 100px;
+    max-width: 28vw;
+    height: auto;
+
+    margin: 0;
+    align-self: end;
+
+    object-fit: contain;
+  }
+
+  .project-page {
+    padding: 1rem;
+  }
+
+  .project-details {
+    padding: 1rem;
+  }
+
+  .footer {
+    padding: 1rem;
+  }
 }
