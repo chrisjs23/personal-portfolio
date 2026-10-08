@@ -1,6 +1,6 @@
 import "./Home.css";
 
-import profilePic from "../assets/images/office-concept.gif"
+import profilePic from "../assets/images/profile-portrait.png"
 
 const profileDetails = [
     { label: "Focus", value: "AI/ML · Software Engineering" },
