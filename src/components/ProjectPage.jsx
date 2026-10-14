@@ -1,3 +1,4 @@
+import ProjectGallery from "./ProjectGallery";
 
 export default function ProjectPage({
   title,
@@ -15,7 +16,7 @@ export default function ProjectPage({
         <p>{subtitle}</p>
       </header>
 
-      <div className={`project-body ${hasImages ? "" : "no-gallery"}`}>
+      <div className="project-body">
         <section className="project-details">
           <ul>
             {bullets.map((bullet, index) => (
@@ -30,9 +31,8 @@ export default function ProjectPage({
         </section>
 
         {hasImages && (
-          <section className="project-gallery">
-            {/* gallery component eventually goes here */}
-            <img src={images[0]} alt="" />
+          <section className="project-gallery-section">
+            <ProjectGallery images={images} />
           </section>
         )}
       </div>

@@ -1,5 +1,8 @@
 import ProjectPage from "../../components/ProjectPage";
 
+import triviagpt1 from '../../assets/images/triviagpt1.png'
+import triviagpt2 from '../../assets/images/triviagpt2.png'
+
 export default function TriviaGPTProject() {
   return (
     <ProjectPage
@@ -18,6 +21,16 @@ export default function TriviaGPTProject() {
         "OpenAI API",
         "MongoDB",
         "REST APIs"
+      ]}
+      images={[
+        {
+          src: triviagpt1,
+          alt: "TriviaGPT home screen"
+        },
+        {
+          src: triviagpt2,
+          alt: "Example question and answer screen from gameplay"
+        }
       ]}
     />
   );

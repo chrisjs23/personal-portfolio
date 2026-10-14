@@ -1,5 +1,9 @@
 import ProjectPage from "../../components/ProjectPage";
 
+import clueless1 from '../../assets/images/Clueless.png'
+import clueless2 from '../../assets/images/Clueless2.png'
+import clueless3 from '../../assets/images/all-character-cards.png'
+
 export default function ClueLessProject() {
   return (
     <ProjectPage
@@ -15,6 +19,20 @@ export default function ClueLessProject() {
         "C#",
         "Multiplayer Networking",
         "Game Development"
+      ]}
+      images={[
+        {
+          src: clueless1,
+          alt: "Clue-Less gameplay"
+        },
+        {
+          src: clueless2,
+          alt: "Clue-Less multiplayer game screen"
+        },
+        {
+          src: clueless3,
+          alt: "Clue-Less character cards"
+        }
       ]}
     />
   );

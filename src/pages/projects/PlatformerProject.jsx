@@ -1,4 +1,5 @@
 import ProjectPage from "../../components/ProjectPage";
+import platformer from '../../assets/images/platformer.png'
 
 export default function PlatformerProject() {
   return (
@@ -15,6 +16,12 @@ export default function PlatformerProject() {
         "GDScript",
         "Game Physics",
         "State Machines"
+      ]}
+      images={[
+        {
+          src: platformer,
+          alt: "Godot workspace showing platformer demo screen"
+        }
       ]}
     />
   );
