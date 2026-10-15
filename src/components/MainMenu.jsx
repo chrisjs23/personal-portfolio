@@ -12,6 +12,9 @@ export default function MainMenu() {
             <NavLink to="/about" className="menu-link">
                 About
             </NavLink>
+            <NavLink to="/art" className="menu-link">
+                Art
+            </NavLink>
         </>
     )
 }

@@ -29,6 +29,7 @@ const technologyGroups = [
             "C++",
             "C#",
             "Java",
+            "Javascript",
             "SQL",
             "Bash"
         ]

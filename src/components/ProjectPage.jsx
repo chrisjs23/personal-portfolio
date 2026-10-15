@@ -1,4 +1,4 @@
-import ProjectGallery from "./ProjectGallery";
+import ProjectGallery from "./ImageGallery";
 
 export default function ProjectPage({
   title,

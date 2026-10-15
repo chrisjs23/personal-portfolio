@@ -1,8 +1,11 @@
 import ProjectPage from "../../components/ProjectPage";
 
-import clueless1 from '../../assets/images/Clueless.png'
-import clueless2 from '../../assets/images/Clueless2.png'
-import clueless3 from '../../assets/images/all-character-cards.png'
+import clueless1 from '../../assets/images/projects/clueless/Clueless.png'
+import clueless2 from '../../assets/images/projects/clueless/Clueless2.png'
+import clueless3 from '../../assets/images/projects/clueless/all-character-cards.png'
+import clueless4 from '../../assets/images/projects/clueless/clueless-logo.png'
+import clueless5 from '../../assets/images/projects/clueless/all-room-cards.png'
+import clueless6 from '../../assets/images/projects/clueless/all-weapon-cards.png'
 
 export default function ClueLessProject() {
   return (
@@ -32,6 +35,18 @@ export default function ClueLessProject() {
         {
           src: clueless3,
           alt: "Clue-Less character cards"
+        },
+        {
+          src: clueless4,
+          alt: "Clue-Less logo"
+        },
+        {
+          src: clueless5,
+          alt: "Clue-Less room cards"
+        },
+        {
+          src: clueless6,
+          alt: "Clue-Less weapon cards"
         }
       ]}
     />

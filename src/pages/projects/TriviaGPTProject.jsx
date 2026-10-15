@@ -1,7 +1,7 @@
 import ProjectPage from "../../components/ProjectPage";
 
-import triviagpt1 from '../../assets/images/triviagpt1.png'
-import triviagpt2 from '../../assets/images/triviagpt2.png'
+import triviagpt1 from '../../assets/images/projects/triviagpt/triviagpt1.png'
+import triviagpt2 from '../../assets/images/projects/triviagpt/triviagpt2.png'
 
 export default function TriviaGPTProject() {
   return (

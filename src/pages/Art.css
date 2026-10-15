@@ -1,0 +1,23 @@
+
+.art-page {
+  width: 100%;
+  padding: 1rem;
+}
+
+.art-header {
+  margin-bottom: 2rem;
+}
+
+.art-header p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.art-gallery {
+  width: 100%;
+}
+
+.art-page .project-gallery__image-container{
+    background: #2a2233;
+    image-rendering: pixelated;
+}

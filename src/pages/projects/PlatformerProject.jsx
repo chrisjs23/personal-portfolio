@@ -1,5 +1,5 @@
 import ProjectPage from "../../components/ProjectPage";
-import platformer from '../../assets/images/platformer.png'
+import platformer from '../../assets/images/projects/platformer/platformer.png'
 
 export default function PlatformerProject() {
   return (

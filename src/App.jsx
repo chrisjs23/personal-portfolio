@@ -3,6 +3,7 @@ import {Routes, Route} from "react-router-dom"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
 import About from "./pages/About"
+import Art from "./pages/Art"
 import Layout from "./components/Layout"
 
 import ProjectsHome from "./pages/ProjectsHome"
@@ -38,6 +39,7 @@ function App() {
           <Route path="media-server" element={<MediaServerProject />} />
           <Route path="platformer" element={<PlatformerProject />} />
         </Route>
+        <Route path="art" element={<Art />} />
       </Route>
     </Routes>
   )
