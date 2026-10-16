@@ -7,16 +7,17 @@ import art2 from "../assets/images/art/chansey-pick-icon.png"
 import art3 from "../assets/images/art/ptcg-card-template.png"
 import art4 from "../assets/images/art/meowstro-logo.png"
 import art5 from "../assets/images/art/meowstro-soloist.png"
-import art6 from "../assets/images/art/meowstro-performers.png"
-import art7 from "../assets/images/art/mini-goku.png"
-import art8 from "../assets/images/art/digivice.gif"
-import art9 from "../assets/images/art/gameboy.gif"
-import art10 from "../assets/images/art/moon-ball.gif"
-import art11 from "../assets/images/art/primitive-spongebob.gif"
-import art12 from "../assets/images/art/delete-this-meme.png"
-import art13 from "../assets/images/art/armadillo-flag-logo.png"
-import art14 from "../assets/images/art/cat-adventurer-doodle.png"
-import art15 from "../assets/images/art/terriermon.png"
+import art6 from "../assets/images/art/meowstro-drummer.png"
+import art7 from "../assets/images/art/meowstro-performers.png"
+import art8 from "../assets/images/art/mini-goku.png"
+import art9 from "../assets/images/art/digivice.gif"
+import art10 from "../assets/images/art/gameboy.gif"
+import art11 from "../assets/images/art/moon-ball.gif"
+import art12 from "../assets/images/art/primitive-spongebob.gif"
+import art13 from "../assets/images/art/delete-this-meme.png"
+import art14 from "../assets/images/art/armadillo-flag-logo.png"
+import art15 from "../assets/images/art/cat-adventurer-doodle.png"
+import art16 from "../assets/images/art/terriermon.png"
 
 
 export default function Art() {
@@ -44,42 +45,46 @@ export default function Art() {
         },
         {
             src: art6,
-            alt: "Pixel art sprite sheet for a standard Meowstro performer"
+            alt: "Pixel art sprite sheet for a Meowstro drummer pug"
         },
         {
             src: art7,
-            alt: "Pixel art rendering of Goku but small"
+            alt: "Pixel art sprite sheet for a standard Meowstro performer"
         },
         {
             src: art8,
-            alt: "3D model of a classic green Digivice"
+            alt: "Pixel art rendering of Goku but small"
         },
         {
             src: art9,
-            alt: "3D model of a classic yellow Gameboy"
+            alt: "3D model of a classic green Digivice"
         },
         {
             src: art10,
-            alt: "3D model of a Moon Ball from Pokemon"
+            alt: "3D model of a classic yellow Gameboy"
         },
         {
             src: art11,
-            alt: "Pixel art of a drooling primitve Spongebob"
+            alt: "3D model of a Moon Ball from Pokemon"
         },
         {
             src: art12,
-            alt: "Pixel art of a small Chris with a speech bubble that says \"Delete this\""
+            alt: "Pixel art of a drooling primitve Spongebob"
         },
         {
             src: art13,
-            alt: "Pixel art armadillo logo from the show Enter the Badlands"
+            alt: "Pixel art of a small Chris with a speech bubble that says \"Delete this\""
         },
         {
             src: art14,
-            alt: "Pixel art of a doodle of a cat adventurer"
+            alt: "Pixel art armadillo logo from the show Enter the Badlands"
         },
         {
             src: art15,
+            alt: "Pixel art of a doodle of a cat adventurer"
+        },
+        {
+            src: art16,
             alt: "Pixel art of Terriermon from Digimon"
         },
     ]
