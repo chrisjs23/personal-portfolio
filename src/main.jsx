@@ -5,6 +5,13 @@ import { BrowserRouter } from 'react-router-dom'
 import App from './App.jsx'
 import './index.css'
 
+const redirect = sessionStorage.getItem('redirect')
+
+if (redirect) {
+  sessionStorage.removeItem('redirect')
+  window.history.replaceState(null, '',`/personal-portfolio${redirect}`)
+}
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter basename="/personal-portfolio">
