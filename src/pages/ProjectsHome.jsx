@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom"
 
 import "./ProjectsHome.css"
+import splash_art from "../assets/images/projects-splash-art.png"
 
 const domains = [
   "Machine Learning",
@@ -32,8 +33,8 @@ export default function ProjectsHome() {
       <div className="projects-hero">
         <img
           className="projects-hero-image"
-          // src=""
-          // alt=""
+          src={splash_art}
+          alt="Pixel art Chris showing icons of various software domains on a table"
         />
       </div>
 
