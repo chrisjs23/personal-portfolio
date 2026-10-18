@@ -92,7 +92,7 @@ export default function Art() {
     return (
         <div className="art-page">
             <section className="art-header">
-                <h1>Personal Artwork</h1>
+                <h1>PERSONAL ARTWORK</h1>
                 <p>
                     A collection of my personal artwork. I enjoy creating art as another way to explore 
                     ideas, design, and creativity outside of software development.
